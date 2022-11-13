@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<!------------------------------HEAD------------------------------------------------>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Phone Fix Booking System - FAQ</title>
+	<!--Embed bootstrap CSS-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+	<!--Embed local stylesheet CSS-->
+	<link rel="stylesheet" href="CSS/style.css" type="text/css">
+</head>
+
+<!------------------------------BODY------------------------------------------------>
+<body class="bg-danger">
+
+	<!--Header-->
+	<header class="container-fluid" style="background-color: var(--header-color); ">
+		<div class="row" style="min-height:17vh;">
+			<!--Title-->
+			<div class="col-12 col-md-12 col-lg-8 align-self-center" style="min-height: 17vh;">
+				<h1 class="text-white text-center">PHONE FIX BOOKING SYSTEM</h1>
+			</div>
+			<!--Navbar-->
+			<div class="text-white col-12 col-md-12 col-lg-4 row h-25 m-0 p-0" 
+			style="background-color: var(--nav-color)">
+				<div class="col-12 col-md-6 col-lg-6 border border-dark text-center bg-success">
+					<a href="index.html">HOME</a></div>
+				<div class="col-12 col-md-6 col-lg-6 border border-dark text-center">
+					<a href="advanced.html">EXTENSION</a></div>
+			</div>	
+		</div>
+	</header>
+	
+	<!--main-->
+	<form class="container-fluid">
+		<div class="row">
+			<!------------------------------------------------------------------------------>
+			<!--Customer Detail-->
+			<div class="col-12 col-md-12 col-lg-4" style="background-color: var(--customer-detail-color); min-height: 20vh">	 
+				<h4>CUSTOMER DETAILS</h4>
+				<!--Customer type-->
+				<div class="row mt-2">
+					<fieldset class="border border-primary col-12 col-lg-11 ms-2 me-4">
+						<legend class="col-11 float-none w-auto">Customer type *</legend>									
+						<div>
+							<label class="col-12 col-md-12 col-lg-4">Consumer</label>
+							<input type="radio" id="customerType" name="customer-type" value="consumer" checked>						
+						</div>
+						<div>
+							<label class="col-12 col-md-12 col-lg-4">Business</label>
+							<input type="radio" id="customerType" name="customer-type" value="business">					
+						</div>
+					</fieldset>				
+				</div>
+				
+				<!--Details-->
+				<!--Title-->
+				<div class="row mt-2">
+					<label class="col-12 col-md-12 col-lg-4">Title *</label>				
+					<select class="col-12 col-md-12 col-lg-7">
+					  <option value="Mr" selected>Mr</option>
+					  <option value="Mrs">Mrs</option>
+					  <option value="Ms">Ms</option>
+					  <option value="Miss">Miss</option>
+					  <option value="Dr">Dr</option>
+					</select>	
+				</div>							
+				
+				<!--First Name-->
+				<div class="row mt-2">
+					<label class="col-12 col-md-12 col-lg-4">First Name: *</label>
+					<input class="col-12 col-md-12 col-lg-7" type="text" id="fname" pattern="[A-Z;a-z;-]+" required>
+				</div>
+				
+				<!--Last Name-->
+				<div class="row mt-2">
+					<label class="col-12 col-md-12 col-lg-4">Last Name: *</label>
+					<input class="col-12 col-md-12 col-lg-7" type="text" id="lname" pattern="[A-Z;a-z;-]+" required>
+				</div>
+				
+				<!--Street-->
+				<div class="row mt-2">
+					<label class="col-12 col-md-12 col-lg-4">Street: *</label>
+					<input class="col-12 col-md-12 col-lg-7" type="text" id="street" required>
+				</div>
+				
+				<!--Suburb-->
+				<div class="row mt-2">
+					<label class="col-12 col-md-12 col-lg-4">Suburb: </label>
+					<input class="col-12 col-md-12 col-lg-7" type="text" id="suburb" pattern="[A-Za-z ]+">
+				</div>
+				
+				<!--City-->
+				<div class="row mt-2">
+					<label class="col-12 col-md-12 col-lg-4">City: *</label>
+					<input class="col-12 col-md-12 col-lg-7" type="text" id="city" pattern="[A-Za-z ]+" required>
+				</div>
+				
+				<!--Post Code-->
+				<div class="row mt-2">
+					<label class="col-12 col-md-12 col-lg-4">Post Code: </label>
+					<input class="col-12 col-md-12 col-lg-7" type="text" id="post-code" pattern="[0-9]{4}" maxlength="4">
+				</div>
+				
+				<!--Phone Number-->
+				<div class="row mt-2">
+					<label class="col-12 col-md-12 col-lg-4">Phone Number: *</label>
+					<input class="col-12 col-md-12 col-lg-7" type="text" id="phone-number" pattern="[0-9/-/+/)/ /(]+" required>
+				</div>
+				
+				<!--Email-->
+				<div class="row mt-2">
+					<label class="col-12 col-md-12 col-lg-4">Email: *</label>
+					<input class="col-12 col-md-12 col-lg-7" type="email" id="email" required>
+				</div>
+
+			
+			</div>
+			
+			<!------------------------------------------------------------------------------>
+			<!--Repair Detail-->
+			<div class="col-12 col-md-12 col-lg-4 m-0 pl-3 container" style="background-color: var(--repair-detail-color); min-height: 20vh">
+				<h4>REPAIR DETAILS</h4>
+				<div class="row mt-2">
+					<label class="col-12 col-md-12 col-lg-4">Purchase Date *</label>
+					<input class="col-12 col-md-12 col-lg-7" type="date" id="purchaseDate" required>
+				</div>		
+				<div class="row mt-2">
+					<label class="col-12 col-md-12 col-lg-4">Repair Date *</label>
+					<input class="col-12 col-md-12 col-lg-7" type="date" id="repairDate" required>
+				</div>	
+				
+				<!--Under Warranty-->
+				<div class="row">
+					<fieldset class="border border-primary col-12 col-lg-11 ms-1 me-4 mb-3">
+						<legend class="col-11 float-none w-auto">Under Warranty</legend>									
+						<div>
+							<label class="col-12 col-md-12 col-lg-4">Warranty</label>
+							<input type="checkbox" id="warranty">						
+						</div>
+					</fieldset>				
+				</div>			
+				
+				<!--Other details-->				
+				<div class="row mt-2">
+					<label class="col-12 col-md-12 col-lg-4">IMEI *</label>
+					<input class="col-12 col-md-12 col-lg-7" type="text" id="imei" pattern="[0-9]{15}" required>
+				</div>	
+				
+				<div class="row mt-2">
+					<label class="col-12 col-md-12 col-lg-4">Make: *</label>				
+					<select class="col-12 col-md-12 col-lg-7">
+					  <option value="Apple" selected>Apple</option>
+					  <option value="LG">LG</option>
+					  <option value="Motorola">Motorola</option>
+					  <option value="Nokia">Nokia</option>
+					  <option value="Samsung">Samsung</option>
+					  <option value="Sony">Sony</option>
+					  <option value="Other">Other</option>
+					</select>	
+				</div>
+				
+				<div class="row mt-2">
+					<label class="col-12 col-md-12 col-lg-4">Model Number</label>
+					<input class="col-12 col-md-12 col-lg-7" type="text" id="model-number">
+				</div>
+				
+				<div class="row mt-2">
+					<label class="col-12 col-md-12 col-lg-4">Fault Category: *</label>				
+					<select class="col-12 col-md-12 col-lg-7">
+					  <option value="Battery" selected>Battery</option>
+					  <option value="Charging">Charging</option>
+					  <option value="Screen">Screen</option>
+					  <option value="SD-storage">SD-storage</option>
+					  <option value="Software">Software</option>
+					  <option value="Other">Other</option>
+					</select>	
+				</div>
+				
+				<div class="row mt-4">
+					<label class="col-12 col-md-12 col-lg-4">Description: *</label>
+					<textarea class="col-12 col-md-12 col-lg-7" style="max-height: 20vh;" rows="4" id="w3review" required></textarea>
+				</div>
+			</div>
+			
+			<!------------------------------------------------------------------------------>
+			<div class="col-12 col-md-12 col-lg-4 m-0 p-0 h-100">
+				<!--Courtesy Phone Detail-->
+				<div style="background-color: var(--courtesy-phone-color); min-height: 40vh">
+					<h4 class="ps-3">COURTERSY PHONE</h4>
+					<!--Item types-->
+					<div class="row mt-2 ms-3">
+						<label class="col-12 col-md-12 col-lg-4">Item Type </label>				
+						<select class="col-12 col-md-12 col-lg-7" id="itemList">
+						  <option value="iPhone" selected>iPhone</option>
+						  <option value="otherPhone">Other Phones</option>
+						  <option value="charger">Charger</option>
+						</select>	
+					</div>	
+
+					<!--Two buttons: Add, Remove-->
+					<div class="row mt-2">
+						<div class="col-6 text-center">
+							<button class="btn-border btn-warning p-1 w-50" id="addBtn">ADD</button>
+						</div>
+						<div class="col-6 text-center">
+							<button class="btn-border btn-danger p-1 w-50" id="removeBtn">REMOVE</button>
+						</div>					
+					</div>	
+
+					<!--Table of added Courtesy items-->
+					<div class="row mt-2 ms-3 me-3 bg-white">
+						<table class="table table-bordered" id="borrowItems">
+							<tr>
+								<td>Item</td>
+								<td>Cost</td>
+							</tr>																			  
+						</table>						
+					</div>					
+				</div>
+				
+								
+				<!--Cost Section-->
+				<div class="pb-2" style="background-color: var(--cost-section-color); min-height: 30vh">
+					<h4 class="ps-3">COST</h4>
+					<div class="row mt-2  ms-3">
+						<label class="col-10 col-md-10 col-lg-4">Bond ($)</label>
+						<input class="col-10 col-md-10 col-lg-7" type="number" id="bond" value="0.00" readonly>
+					</div>	
+					<div class="row mt-2  ms-3">
+						<label class="col-10 col-md-10 col-lg-4">Service Fee ($)</label>
+						<input class="col-10 col-md-10 col-lg-7" type="number" id="serviceFee" value="85.00" readonly>
+					</div>	
+					<div class="row mt-2  ms-3">
+						<label class="col-10 col-md-10 col-lg-4">Total ($)</label>
+						<input class="col-10 col-md-10 col-lg-7" type="number" id="totalFee" value="85.00" readonly>
+					</div>	
+					<div class="row mt-2  ms-3">
+						<label class="col-10 col-md-10 col-lg-4">GST ($)</label>
+						<input class="col-10 col-md-10 col-lg-7" type="number" id="gst" value="12.75" readonly>
+					</div>
+					<div class="row mt-2  ms-3">
+						<label class="col-10 col-md-10 col-lg-4">Total(+GST) ($)</label>
+						<input class="col-10 col-md-10 col-lg-7" type="number" id="totalAndGstFee" value="97.75" readonly step="0.01">
+					</div>
+					
+				</div>			
+			</div>
+			
+			<!--Button Section-->
+			<div class="col-12 text-center pt-3" style="background-color: var(--button-section-color); min-height: 10vh">
+			
+				<input type="submit" class="btn me-3 text-dark bg-white" style="width: 5em;" value="SUBMIT">
+				<input type="reset" class="btn me-3 text-dark bg-white" style="width: 5em;" value="RESET" id="reset">
+				<a href="faq.html" ><input type="button" class="btn me-3 text-dark bg-white" style="width: 5em;"value="FAQ"></a>
+			</div>
+		</div>	
+	</form>
+	
+	
+	<footer class="d-flex align-items-center justify-content-center" style="background-color: var(--footer-color); min-height: 10vh;">
+		<div class="text-center text-white">
+			<h5>ADVANCED WEB DEVELOPMENT @2022</h5>
+			<h6> Created by: Ethan Huston</h6>
+		</div>
+	</footer>
+	
+	
+ 
+	<!--insert Bootstrap JS-->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+	<!--Embed JQUERY library-->
+	<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>	
+	<!--Embed My JS library-->
+	<script src="JS/javascript.js"></script>
+	
+</body>
+</html>

@@ -1,0 +1,21 @@
+.image-style {
+	display: block; 
+	height: 150px; 
+	margin-left: auto; 
+	margin-right: auto;
+}
+
+/*Declare variables in CSS files*/
+:root {
+	--main-color: #000664;
+	--header-color: #2C3E50;
+	--nav-color: #4DD0E1;
+	--customer-detail-color: #FCF3CF;
+	--repair-detail-color: #D5F5E3;
+	--courtesy-phone-color: #2874A6;
+	--cost-section-color: #EDBB99;
+	--button-section-color: #2874A6;
+	--footer-color: #2C3E50;
+}
+
+
